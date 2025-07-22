@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Decorative SVG background shapes -->
+  <div class="background-shapes">
+    <svg class="shape-top" viewBox="0 0 500 150" preserveAspectRatio="none">
+      <path d="M0,0 C150,100 350,0 500,100 L500,00 L0,0 Z" style="fill:#6a82fb;opacity:0.25;"></path>
+    </svg>
+    <svg class="shape-bottom" viewBox="0 0 500 150" preserveAspectRatio="none">
+      <path d="M0,100 C150,0 350,200 500,100 L500,150 L0,150 Z" style="fill:#fc5c7d;opacity:0.25;"></path>
+    </svg>
+  </div>
+  <div class="quiz-container">
+    <div id="start-screen">
+      <h1>Quiz Game</h1>
+      <button id="start-btn">Start Quiz</button>
+    </div>
+    <div id="quiz-screen" style="display:none;">
+      <div id="question"></div>
+      <div id="answers"></div>
+      <div id="score"></div>
+    </div>
+    <div id="result-screen" style="display:none;">
+      <h2>Quiz Complete!</h2>
+      <div id="final-score"></div>
+      <button id="restart-btn">Restart Quiz</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
